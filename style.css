@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+:root {
+    --clr-red: #ec775f;
+    --clr-cyan: #76b5bc;
+    --clr-brown-2: #382314;
+    --clr-brown-1: #93867b;
+    --clr-cream: #f8e9dd;
+    --clr-orange: #fffaf5;
+}
+p,
+a,
+div {
+    font-size: 1.125rem;
+}
+
+body {
+    background-color: var(--clr-orange);
+}
+.header,
+.container {
+    width: 500px;
+    max-width: 90%;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.header {
+    margin: 2rem auto 20px;
+    display: flex;
+    background-color: var(--clr-red);
+    color: #fff;
+}
+.balance {
+    margin-right: auto;
+}
+
+.container {
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.text-sm {
+    font-size: 0.75rem;
+}
+.text-md {
+    font-size: 1rem;
+}
+.text-lg {
+    font-size: 1.5rem;
+}
+.text-xl {
+    font-size: 2.5rem;
+}
+.font-500 {
+    font-weight: 500;
+}
+.font-700 {
+    font-weight: 700;
+}
+.mb-sm {
+    margin-bottom: 6px;
+}
+.text-brown {
+    color: var(--clr-brown-2);
+}
+.text-gray {
+    color: #777;
+}
+.text-right {
+    text-align: right;
+}
+.bars-container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid #77777732;
+}
+.bar-container {
+    position: relative;
+}
+.bar-container div {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+.data {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--clr-brown-2);
+    color: #fff !important;
+    position: absolute;
+    top: -40px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+.bar {
+    width: 50px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+.not-today {
+    background-color: var(--clr-red);
+}
+.today {
+    background-color: var(--clr-cyan);
+}
+.footer {
+    display: flex;
+}
+.total {
+    margin-right: auto;
+}
+.increase {
+    margin-top: auto;
+}
+@media screen and (max-width: 600px) {
+    .header,
+    .container {
+        max-width: 95%;
+    }
+}
